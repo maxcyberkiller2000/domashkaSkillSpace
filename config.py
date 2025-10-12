@@ -6,7 +6,7 @@ import os
 logging.basicConfig(level=logging.INFO)
 
 # Токен бота
-API_TOKEN = '8458819912:AAEc7Z3Vrxr-d5z-KO9l3FhOtCgowCR3x-Y'
+API_TOKEN = 'TOKEN'
 
 # Настройки базы данных
 DB_NAME = 'quiz_bot.db'
@@ -74,4 +74,5 @@ async def recreate_db():
     """Пересоздать базу данных (для исправления структуры)"""
     if os.path.exists(DB_NAME):
         os.remove(DB_NAME)
+
     await init_db()
